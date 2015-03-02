@@ -1,0 +1,33 @@
+<<<<<<< HEAD
+{% extends 'rango/base.html' %}
+
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+
+{% block body_block %}
+        <h1>Rango says...</h1>
+        here is the logo for your project! <strong>{{ boldmessage2 }}</strong><br />
+		<img src="{% static "images/logo.jpg" %}" alt="GUGrubGuide Logo" /> <!-- New line -->
+{% endblock %}
+=======
+<!DOCTYPE html>
+
+{% load static %} <!-- New line -->
+
+<html>
+
+    <head>
+        <title>About</title>
+    </head>
+
+    <body>
+        <h1>Rango says...</h1>
+        here is the logo for your project! <strong>{{ boldmessage2 }}</strong><br />
+        <a href="/rango/">Index</a><br />
+		<img src="{% static "images/logo.jpg" %}" alt="GUGrubGuide Logo" /> <!-- New line -->
+    </body>
+
+</html>
+>>>>>>> 42fa120cf10bf1c58dbdac544c4a34fa2fc41aa7
