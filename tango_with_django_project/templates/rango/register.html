@@ -1,36 +1,18 @@
-<<<<<<< HEAD
 {% extends 'rango/base.html' %}
 
 {% block title %}Register{% endblock %}
 
 {% block body_block %}
-=======
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Rango</title>
-    </head>
 
-    <body>
->>>>>>> 42fa120cf10bf1c58dbdac544c4a34fa2fc41aa7
         <h1>Register with Rango</h1>
 
         {% if registered %}
         Rango says: <strong>thank you for registering!</strong>
-<<<<<<< HEAD
         <a href="{% url 'index' %}">Return to the homepage.</a><br />
         {% else %}
         Rango says: <strong>register here!</strong><br />
 
-        <form id="user_form" method="post" action="{% url 'register' %}"
-=======
-        <a href="/rango/">Return to the homepage.</a><br />
-        {% else %}
-        Rango says: <strong>register here!</strong><br />
-
-        <form id="user_form" method="post" action="/rango/register/"
->>>>>>> 42fa120cf10bf1c58dbdac544c4a34fa2fc41aa7
-                enctype="multipart/form-data">
+        <form id="user_form" method="post" action="{% url 'register' %}" enctype="multipart/form-data">
 
             {% csrf_token %}
 
@@ -44,9 +26,8 @@
             <input type="submit" name="submit" value="Register" />
         </form>
         {% endif %}
-<<<<<<< HEAD
 {% endblock %}
 =======
     </body>
 </html>
->>>>>>> 42fa120cf10bf1c58dbdac544c4a34fa2fc41aa7
+
